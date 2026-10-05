@@ -1,0 +1,16 @@
+Ref,Qty,Value,Package,Notes
+U1,1,ESP32-WROOM-32,"Module, castellated",Soldered on carrier
+"U2,U3",2,nRF24L01+ PA/LNA,2x4 2.54mm socket,Antennas face OUT/UP
+U4,1,TP4056 USB-C module,"Sub-board, bottom side",Charger; IN=USB-C
+U5,1,MCP1700T-3302 / AMS1117-3.3,SOT-23 / SOT-223,3.3V reg (see note)
+BT1,1,18650 holder,"Through-hole, bottom side",Keystone 1042P or clone
+SW1,1,SPDT slide switch,SS12D00,Battery master on/off
+SW2,1,Tact button (EN/RST),6x6mm,Reset
+SW3,1,Tact button (BOOT/IO0),6x6mm,Flash mode
+J1,1,UART header 1x6,2.54mm,GND VCC EN IO0 TX RX (for FTDI)
+"Q1,Q2",2,MMBT2222 / S8050,SOT-23,Auto-reset (optional)
+C1,1,470uF 10V,Electrolytic/Tant,Bulk near ESP32
+"C2,C3",2,10uF 16V,0805 / tant,One per nRF VCC
+"C4,C5,C6",3,100nF,0603/0805,Decoupling
+"R1,R2",2,10k,0603,EN & IO0 pull-ups
+"R3,R4",2,1k,0603,UART / base resistors
